@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="hydrated">
+    <head>
+        <meta charset="UTF-8">
+        <style data-styles>ion-icon{visibility: hidden}.hydrated{visibility: inherit}</style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="Encriptador.js" defer></script>
+        <link rel="stylesheet" href="reset.css">
+        <title>Challeng Alura Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <div class="TituloChallenge">
+                Challenge ONE Sprint 01: Encriptador
+            </div>
+        </header>
+
+        <main>
+            <section class="container">
+                <section class="left">
+                    <div class="box_texto">
+                        <textarea id="txtextoOriginal" placeholder="Escriba aqui" cols="2000" rows="110"></textarea>
+                        <div class="span">
+                            <ion-icon class="recomendacion md hydrated" name="alert-circle-outline" role="img"></ion-icon>
+                            <span>Por favor, ingrese solamente letras minusculas y sin acentos </span>
+                        </div>
+                        <div class="botones">
+                            <button onclick="Encriptar()">Encriptar</button>
+                            <button class="azul" onclick="DesEncriptar()">Desencriptar</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="right">
+                    <div class="box_texto">
+                        <textarea id="txtEncriptado" cols="60" rows="20" disabled=""></textarea>
+                        <div class="botones">
+                            <button id="botonCopiar" onclick="Copiar()">Copiar</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+       
+    </body>
+</html>
